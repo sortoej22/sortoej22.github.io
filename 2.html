@@ -15,23 +15,46 @@
 
 <h2>Toppings</h2>
 
-<TABLE BORDER=2>
- <TR>
- <TD>Hi</TD>
- <TD> go</TD>
- <TD> <ol TYPE="A">
- <li> Illinois </li>
- <li> Delaware </li>
- <li> Tennessee </li>
- <li> Rhode Island </li>
- </ol> </TD>
- </TR>
- <TR> <TD COLSPAN=2>There now</TD>
- <TD><a
-href="http://jcsites.juniata.edu/faculty/kruse/it10
-5/it105syl.htm">homepage?</a> </TD>
- </TR>
-</TABLE>
+<!-- an example of a button -->
+ <input type=button value="Push Me!">
+<!-- an example of a submit button -->
+<input type=”submit” value="Submit Form">
+<!-- an example of a reset button -->
+<input type=”reset” value="Clear">
+<!-- Text field, with attributes controlling column
+width -->
+Enter your first name:
+<input type=”text” name="firstName" value="Tom"
+size=50>
+<!-- an examnple of two checkboxes -->
+<INPUT TYPE=CHECKBOX NAME="eggs" VALUE="eggs"> Eggs
+<INPUT TYPE=CHECKBOX NAME="toast" VALUE="toast">
+Toast
+<!-- radio buttons get the same group (and correct
+functionality) by having the same name -->
+<INPUT TYPE=RADIO NAME="Station" VALUE="magic"> 93.7
+<INPUT TYPE=RADIO NAME="Station" VALUE="bus"> 99.5
+<INPUT TYPE=RADIO NAME="Station" VALUE="merf"> 103.5
+<!-- select element with attributes controlling
+number of choices viewed and selected -->
+<label for=”days”>Choose a day:</label>
+<SELECT NAME="choices" id=”days” SIZE=3 MULTIPLE>
+ <option>Monday</option>
+ <option>Tuesday</option>
+ <option>Wednesday</option>
+ <option>Thursday</option>
+ <option>Friday</option>
+ <option>Saturday</option>
+ <option>Sunday</option>
+</SELECT>
+<!-- the <label> tag is used for accessibility -->
+<!-- textarea element with attributes controlling
+number of rows and columns, and default text inside
+container element -->
+Now we will have a text area for comments:<BR>
+<TEXTAREA NAME="comments" ROWS=5 COLS=40>
+Enter your comments, please be nice, here.
+</TEXTAREA>
 
 
 </body>
