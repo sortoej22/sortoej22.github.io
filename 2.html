@@ -38,7 +38,6 @@ table, td {
 <h2>Pizza Size</h2>
 
 <h2>Crust Style</h2>
-<form action="/action_page.php">
 <INPUT TYPE=RADIO NAME="Station" VALUE="Cheese-Stuffed Crust">Cheese-Stuffed Crust
 <INPUT TYPE=RADIO NAME="Station" VALUE="Flatbread">Flatbread
 <INPUT TYPE=RADIO NAME="Station" VALUE="Thin Crust">Thin Crust
@@ -46,7 +45,7 @@ table, td {
 <INPUT TYPE=RADIO NAME="Station" VALUE="NY Style Pizza">NY Style Pizza
 
 <h2>Toppings</h2>
-
+<form action="/action_page.php">
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Pepperoni">
   <label for="vehicle1"> Pepperoni </label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Sausage">
@@ -65,6 +64,13 @@ table, td {
   <label for="vehicle8"> Chicken </label><br>
   <input type="submit" value="Submit Order">
   <input type="reset" value="Reset">
+</form>
+<form method="POST" id="form">
+<input type="text" name="name" id="name" value="default value" required >
+<input type="checkbox" name="group[]" id="checkbox1" value="0" checked>
+<input type="checkbox" name="group[]" id="checkbox2" value="1" >
+<button type="reset" onclick="resetForm()"> Reset </button>
+<button type="submit"> Submit </button>
 </form>
 </body>
 </html>
