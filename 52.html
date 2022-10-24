@@ -1,0 +1,86 @@
+<!--html  Erika Sorto, oct 13, 2022. This is assignment 4, and is a site to order pizza!#2.-->
+<!Doctype html>
+<head>
+<tittle style="color: #DE3232"><b><span style="font-size: 40px"><I>Order here &#8595</I></span</b></tittle>
+<hr>
+<body style="background-color:#FFAA96">
+<h2>Costumer Information</h2>
+<form method="POST" id="form">
+<style>
+table, td {
+  border:1px solid black;
+}
+</style>
+<IMG SRC="https://www.westernunion.com/staticassets/R22-08.05.3/media/send-via-app-1.svg" ALIGN="right" />
+<body>
+<table>
+ <tr>
+    <td>First Name</td>
+    <td><TEXTAREA NAME="comments" ROWS=2 COLS=20>
+</TEXTAREA></td>
+  </tr>
+  <tr>
+    <td>Last Name</td>
+    <td><TEXTAREA NAME="comments" ROWS=2 COLS=20>
+</TEXTAREA></td>
+  <tr>
+    <td>Phone Number</td>
+    <td><TEXTAREA NAME="comments" ROWS=2 COLS=20>
+</TEXTAREA></td>
+  </tr>
+  <tr>
+    <td>Street Address</td>
+    <td><TEXTAREA NAME="comments" ROWS=2 COLS=20>
+</TEXTAREA></td>
+</table>
+<h2>Delivery Options</h2>
+<INPUT TYPE=RADIO NAME="Delivery" VALUE="Delivery">Delivery
+<INPUT TYPE=RADIO NAME="Delivery" VALUE="Pickup">Pickup
+<INPUT TYPE=RADIO NAME="Delivery" VALUE="Dine-in">Dine-in
+<p><label for="story">Driving Directions:</label>
+<textarea id="Directions" name="Directions"
+          rows="6" cols="50">
+Enter your driving directions.
+</textarea></p>
+<hr>
+<IMG SRC="https://le-cdn.hibuwebsites.com/8db8664ddba146b3b2ad88304e07a7fe/dms3rep/multi/opt/3634478-432w.png" ALIGN="right" />
+<h2>Pizza Size</h2>
+<label for="Size">Choose a size:</label>
+<SELECT NAME="choices" id="Size" SIZE=3>
+ <option>Small</option>
+ <option>Medium</option>
+ <option>Large</option>
+ <option>Extra Large</option>
+</SELECT>
+<h2>Crust Style</h2>
+<INPUT TYPE=RADIO NAME="Crust" VALUE="Cheese-Stuffed Crust">Cheese-Stuffed Crust
+<INPUT TYPE=RADIO NAME="Crust" VALUE="Flatbread">Flatbread
+<INPUT TYPE=RADIO NAME="Crust" VALUE="Thin Crust">Thin Crust
+<INPUT TYPE=RADIO NAME="Crust" VALUE="Neapolitan Crust">Neapolitan Crust
+<INPUT TYPE=RADIO NAME="Crust" VALUE="NY Style Pizza">NY Style Pizza
+<h2>Toppings</h2>
+<form method="POST" id="form">
+<input type="checkbox" name="Chicken" id="checkbox1" value="Chicken">
+  <label for="vehicle1"> Chicken </label>
+<input type="checkbox" name="Peppers" id="checkbox2" value="Peppers">
+  <label for="vehicle2"> Peppers </label>
+<input type="checkbox" name="Pineapple" id="checkbox3" value="Pineapple">
+  <label for="vehicle3"> Pineapple </label>
+<input type="checkbox" name="Onions" id="checkbox1" value="Onions">
+  <label for="vehicle4"> Onions </label>
+<input type="checkbox" name="Bacon" id="checkbox2" value="Bacon">
+  <label for="vehicle5"> Bacon </label>
+<input type="checkbox" name="Mushrooms" id="checkbox3" value="Mushrooms">
+  <label for="vehicle6"> Mushrooms </label>
+<input type="checkbox" name="Sausage" id="checkbox1" value="Sausage">
+  <label for="vehicle7"> Sausage </label>
+<input type="checkbox" name="Pepperoni" id="checkbox2" value="Pepperoni">
+  <label for="vehicle8"> Pepperoni </label>
+<hr>
+<button type="reset" onclick="resetForm()"> Reset </button>
+<a href="https://sortoej22.github.io/4.html">
+<input type="button" value="Submit Order">
+</form>
+<table style="background-color:#33475b">
+</body>
+</html>
