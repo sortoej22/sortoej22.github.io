@@ -1,0 +1,22 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <tittle>Javascript</tittle>
+      <script>
+         function glue()
+         {
+           document.seasons.full.value = 
+                     document.seasons.summer.value
+                   + " "
+                   + document.seasons.fall.value;
+         }
+      </script>
+  </head>
+  <body>
+     <form name=seasons>
+      Summer: <input type=text name="Summer"><br>
+      Fall:   <input type=text name="Fall" onchange="glue();"><br>
+      Winter: <input type=text name="Winter"><br>
+     </form>
+    </body>
+</html>
