@@ -5,18 +5,18 @@
  <script>
  function glue()
  {
- document.inclass.full.value =
- document.inclass.first.value
- + document.inclass.last.value;
+ document.seasons.full.value =
+ document.seasons.summer.value
+ + document.inclass.fall.value;
  }
  </script>
  </head>
  <body>
- <form name=inclass>
- First: <input type=text name="first"><br>
- Last: <input type=text name="last"
+ <form name=seasons>
+ Summer: <input type=text name="Summer"><br>
+ Fall: <input type=text name="Fall"
  onchange="glue();" ><br>
- Full: <input type=text name="full">
+ Winter: <input type=text name="Winter">
  </form>
  </body>
 </html>
