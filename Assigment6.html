@@ -5,23 +5,18 @@
  <script>
  function glue()
  {
- document.querySelector(“#full”).value =
- document.querySelector(“#first”).value
- + “ “
- + document.querySelector(“#last”).value
+ document.inclass.full.value =
+ document.inclass.first.value
+ + document.inclass.last.value;
  }
  </script>
  </head>
  <body>
  <form name=inclass>
- First: <input type=text id="first"><br>
- Last: <input type=text id="last"
+ First: <input type=text name="first"><br>
+ Last: <input type=text name="last"
  onchange="glue();" ><br>
- Full: <input type=text id="full">
- <input type=reset value="clear entries">
+ Full: <input type=text name="full">
  </form>
- <div id=changeText>
- Here is some text.
- </div>
  </body>
 </html>
