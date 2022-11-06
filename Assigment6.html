@@ -2,34 +2,33 @@
 <html lang=”en”>
  <head>
  <title>Javascript</title>
-<h><b>Find the word!</b></h>
  <script>
  function glue()
  {
- document.querySelector("#word").value =
- document.querySelector("#summer weather").value
- + " "
- + document.querySelector("#man's best friend").value
+ document.querySelector(“#full”).value =
+ document.querySelector(“#first”).value
+ + “ “
+ + document.querySelector(“#last”).value
  }
  function hey()
  {
-document.querySelector("#changeText").innerHTML =
- "Answer: " +
-document.querySelector("#summer weather").value;
+document.querySelector(“#changeText”).innerHTML =
+ "Hi " +
+document.querySelector("#first").value;
  }
  </script>
  </head>
  <body>
- <form name=hotdog>
- summer weather: <input type=text id="summer weather"
+ <form name=inclass>
+ First: <input type=text id="first"
  onchange="hey();" ><br>
- man's best friend: <input type=text id="man's best friend"
+ Last: <input type=text id="last"
  onchange="glue();" ><br>
- word: <input type=text id="word">
+ Full: <input type=text id="full">
  <input type=reset value="clear entries">
  </form>
  <div id=changeText>
-What is it?
+ Here is some text.
  </div>
  </body>
 </html>
