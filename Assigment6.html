@@ -2,29 +2,30 @@
 <html lang=”en”>
  <head>
  <title>Javascript</title>
+<h><b>Find the word!</b></h>
  <script>
  function glue()
  {
- document.querySelector("#full").value =
- document.querySelector("#first").value
+ document.querySelector("#word").value =
+ document.querySelector("#summer weather").value
  + " "
- + document.querySelector("#last").value
+ + document.querySelector("#man's best friend").value
  }
  function hey()
  {
 document.querySelector("#changeText").innerHTML =
  "Hi " +
-document.querySelector("#first").value;
+document.querySelector("#summer weather").value;
  }
  </script>
  </head>
  <body>
  <form name=inclass>
- First: <input type=text id="first"
+ summer weather: <input type=text id="summer weather"
  onchange="hey();" ><br>
- Last: <input type=text id="last"
+ man's best friend: <input type=text id="man's best friend"
  onchange="glue();" ><br>
- Full: <input type=text id="full">
+ word: <input type=text id="word">
  <input type=reset value="clear entries">
  </form>
  <div id=changeText>
