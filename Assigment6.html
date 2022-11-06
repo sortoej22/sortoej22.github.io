@@ -6,15 +6,15 @@
  function glue()
  {
  document.seasons.full.value =
- document.seasons.first.value
- + document.seasons.last.value;
+ document.seasons.summer.value
+ + document.seasons.fall.value;
  }
  </script>
  </head>
  <body>
  <form name=seasons>
- First: <input type=text name="first"><br>
- Last: <input type=text name="last"
+ summer: <input type=text name="summer"><br>
+ fall: <input type=text name="fall"
  onchange="glue();" ><br>
  Full: <input type=text name="full">
  </form>
