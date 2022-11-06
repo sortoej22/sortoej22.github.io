@@ -2,33 +2,34 @@
 <html lang=”en”>
  <head>
  <title>Javascript</title>
+<h>Find the word!</h>
  <script>
  function glue()
  {
- document.querySelector("#winter").value =
- document.querySelector("#summer").value
+ document.querySelector("#word").value =
+ document.querySelector("#summer weather").value
  + " "
- + document.querySelector("#fall").value
+ + document.querySelector("#man's best friend").value
  }
  function hey()
  {
 document.querySelector("#changeText").innerHTML =
  "Answer: " +
-document.querySelector("#summer").value;
+document.querySelector("#summer weather").value;
  }
  </script>
  </head>
  <body>
  <form name=seasons>
- summer: <input type=text id="summer"
+ summer weather: <input type=text id="summer weather"
  onchange="hey();" ><br>
- fall: <input type=text id="fall"
+ man's best friend: <input type=text id="man's best friend"
  onchange="glue();" ><br>
- winter: <input type=text id="winter">
+ word: <input type=text id="word">
  <input type=reset value="clear entries">
  </form>
  <div id=changeText>
-How much would you rate these seasons?
+What is it?
  </div>
  </body>
 </html>
