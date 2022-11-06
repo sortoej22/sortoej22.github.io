@@ -5,10 +5,10 @@
  <script>
  function glue()
  {
- document.querySelector("#full").value =
+ document.querySelector("#third").value =
  document.querySelector("#first").value
  + " "
- + document.querySelector("#last").value
+ + document.querySelector("#second").value
  }
  function hey()
  {
@@ -20,11 +20,11 @@ document.querySelector("#first").value;
  </head>
  <body>
  <form name=inclass>
- First: <input type=text id="first"
+ Summer Weather: <input type=text id="first"
  onchange="hey();" ><br>
- Last: <input type=text id="last"
+ Man's best friend: <input type=text id="second"
  onchange="glue();" ><br>
- Full: <input type=text id="full">
+ Word: <input type=text id="third">
  <input type=reset value="clear entries">
  </form>
  <div id=changeText>
