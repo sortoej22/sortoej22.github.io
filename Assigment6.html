@@ -10,11 +10,18 @@
  + “ “
  + document.querySelector(“#last”).value
  }
+ function hey()
+ {
+document.querySelector(“#changeText”).innerHTML =
+ "Hi " +
+document.querySelector("#first").value;
+ }
  </script>
  </head>
  <body>
  <form name=inclass>
- First: <input type=text id="first"><br>
+ First: <input type=text id="first"
+ onchange="hey();" ><br>
  Last: <input type=text id="last"
  onchange="glue();" ><br>
  Full: <input type=text id="full">
