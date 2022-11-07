@@ -1,55 +1,33 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-      </script>
-      <script>
-         function functionAlert(msg, myYes) {
-            var confirmBox = $("#confirm");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".yes").unbind().click(function() {
-               confirmBox.hide();
-            });
-            confirmBox.find(".yes").click(myYes);
-            confirmBox.show();
-         }
-      </script>
-      <style>
-         #confirm {
-            display: none;
-            background-color: #FFFFFF;
-            border: 1px solid #aaa;
-            position: fixed;
-            width: 250px;
-            left: 50%;
-            margin-left: -100px;
-            padding: 6px 8px 8px;
-            box-sizing: border-box;
-            text-align: center;
-         }
-         #confirm button {
-            background-color: #48E5DA;
-            display: inline-block;
-            border-radius: 5px;
-            border: 1px solid #aaa;
-            padding: 5px;
-            text-align: center;
-            width: 80px;
-            cursor: pointer;
-         }
-         #confirm .message {
-            text-align: left;
-         }
-      </style>
-   </head>
-   <body>
-      <div id="confirm">
-         <div class="message">This is a warning message.</div>
-         <button class="yes">OK</button>
-         <img src = "https://encrypted-tbn0.gstatic.com/images?q=
-                     tbn:ANd9GcSNjyHBjM74KLxvROpx34zsT4zPzMWHMHz4zzJwAtemXGglsjtA"
-                      width="120" height="70"/>
-      </div>
-      <input type="button" value="Click Me" onclick="functionAlert();" />
-   </body>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Dialog - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+  body {
+    font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+    font-size: 62.5%;
+}
+
+  </script>
+  <script>
+  $(function() {
+    $( "#dialog" ).dialog();
+  });
+  </script>
+</head>
+<body>
+
+<div id="dialog" title="Basic dialog">
+  <p>Image:</p>
+  <img src="http://placehold.it/50x50" alt="Placeholder Image" />
+
+</div>
+
+
+</body>
 </html>
