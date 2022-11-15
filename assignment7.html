@@ -81,6 +81,15 @@ var bgToggle=true;
              bgToggle=true;
            }
         }
+function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value );
+           for (i=1; i<=N; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+        }
 </script>
    </head>
    <body><h1> Erika Calculator </h1>
@@ -101,6 +110,11 @@ var bgToggle=true;
         <input type=button value="plum" onclick="makeplum();">
 <br>
 <h1>Lets start a summation!</h1>
+ Enter an integer to sum to: <input type=text id="N"><br>
+        <input type=button value="Start the Sum" onclick="doSum();">
+        <div id="sumHere">
+          Your sum is: 
+        </div>
         <input type=reset value="clear entries">
       </form>
    </body>
