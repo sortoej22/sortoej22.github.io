@@ -1,6 +1,105 @@
+<!-- Erika Sorto. This is assignment 7-->
+
 <!DOCTYPE html>
-<html>
-<body>
-Hi There.
-</body>
+<html lang="en"> 
+   <head>
+      <title>Javascript</title>
+<style>
+h1  {
+	text-align: center;
+	padding: 23px;
+	background-color: skyblue;
+	color: white;
+	}
+</style>
+<h1> Erika Calculator </h2>
+      <script>
+        function add()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value); 
+        }
+        function div()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         / parseFloat(document.querySelector("#second").value); 
+        }
+        function sub()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         - parseFloat(document.querySelector("#second").value); 
+        }
+        function mult()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         * parseFloat(document.querySelector("#second").value); 
+        }
+var bgToggle=true;
+        function makesandybrown()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="sandybrown";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+var bgToggle=true;
+        function makepink()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="pink";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+var bgToggle=true;
+        function makeantiquewhite()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="antiquewhite";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+var bgToggle=true;
+        function makeplum()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="plum";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+</script>
+   </head>
+   <body>
+      <form name=inclass>
+        <input type=text id="first">
+       <input type=button value="Addtion, +" onclick="add();">
+       <input type=button value="Division , /" onclick="div();">
+       <input type=button value="Subtraction , -" onclick="sub();">
+       <input type=button value="Multiplication , *" onclick="mult();">
+        <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+        <input type=text id="full"><br>
+<br>
+<h1>Chose a color</h1>
+      <form name=colors>
+        <input type=button value="sandybrown" onclick="makesandybrown();">
+        <input type=button value="pink" onclick="makepink();">
+        <input type=button value="antiquewhite" onclick="makeantiquewhite();">
+        <input type=button value="plum" onclick="makeplum();">
+      </form>
+   </body>
 </html>
