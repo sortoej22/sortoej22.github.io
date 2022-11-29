@@ -1,6 +1,87 @@
+<!-- This is page 3, where they can find the classic songs I like.-->
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+<head>
+<h1> 80's Classics</h1>
+<style>
+h1  {
+	text-align: center;
+	color: white;
+	}
+.formstyle
+{
+background-color: white;
+width: 360px;
+height: 670px;
+margin: auto;
+border: 3px solid skyblue;
+border-radius: 5px;
+padding: 20px;
+}
+input
+{
+width: 360px;
+background-color: pink;
+color: white;
+border: 3px solid gray;
+	border-radius: 5px;
+	padding: 26px;
+	margin: 5px;
+	font-size: 15px;
+}
+Button 
+{
+width: 50px;
+height: 30px;
+background-color: baby pink;
+color: white;
+border: 3px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#calc{
+width: 320px;
+height: 60px;
+border: 5px solid black;
+	border-radius: 3px;
+	padding: 20px;
+	margin: auto;
+}
+</style>
+</head>
 <body>
-Hi There.
+<style>
+body {
+  background-image: url('https://img.freepik.com/premium-photo/80s-retro-mountain-background-wallpaper-80s-retro-sci-fi-pop-art-scene_83608-227.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 150%;
+}
+</style>
+<div class= "formstyle">
+<form name = "form1">
+
+  <input id = "calc" type ="text" name = "answer"> <br> <br>
+<a href="https://www.youtube.com/watch?v=CsHiG-43Fzg">
+  <input type = "button" value = "head over heels" onclick = "form1.answer.value = 'head over heels' ">
+  <br> <br>
+    <a href="https://www.youtube.com/watch?v=WRcCBI5rFfM">
+  <input type = "button" value = "Tren Al Sur" onclick = "form1.answer.value += 'Tren Al Sur' ">
+  <br> <br>
+  <a href="https://www.youtube.com/watch?v=XbAM2_6jKY0">
+  <input type = "button" value = " I'm In the Mood for Dancing" onclick = "form1.answer.value += ' I'm In the Mood for Dancing' ">
+  <br> <br>
+ <a href="https://www.youtube.com/watch?v=wluw0zMUP2s">
+  <input type = "button" value = "Words (Don't come easy)" onclick = "form1.answer.value += 'Words (Don't come easy)' ">
+  <br> <br>
+  <a href="https://www.youtube.com/watch?v=xFrGuyw1V8s">
+  <input type = "button" value = "Dancing Queen" onclick = "form1.answer.value += 'Dancing Queen' ">
+  <br> <br>
+ <button type="reset" onclick="resetForm()"> Reset </button>
+</form>
+</div>
+<a href="https://sortoej22.github.io/signature2.html">
+ <button type="button" onclick="resetForm()"> Back </button>
 </body>
 </html>
