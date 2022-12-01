@@ -1,8 +1,21 @@
-<-- Erika Sorto , this is exam 03 review -->
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-</head> 
-<body>
-</body>
+ <head>
+ <title>Javascript</title>
+ <script>
+ function yesIknow()
+ {
+if (document. querySelector("#genres").value =="yes")
+ {
+ alert("Hey, you know some!");
+ }
+ }
+ </script>
+ </head>
+ <body>
+ <form name=inclass>
+Yes or No: <input
+type=text id=genres onchange="yesIknow();">
+ </form>
+ </body>
 </html>

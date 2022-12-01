@@ -5,6 +5,69 @@
 <h1>Here's a few exercises that will help your genre in music and some possible favorite songs!</h1>
 <h2>First: let's  check how many genres you know!</h2>
 Check the boxes of the ones you know and don't know!
+<script>
+ function yesIknow()
+ {
+if (document. querySelector("#genres").value =="yes")
+ {
+ alert("Hey, you know some!");
+ }
+</script>
+<script>
+ function yesIknow()
+ {
+if (document. querySelector("#genres").value =="no")
+ {
+ alert("Oh, don't worry!");
+ }
+ }
+ </script>
+<style>
+.container{
+Padding; 5%;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.container{ 
+width: 100%;
+min-height: 100vh;
+padding: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+search-bar{
+width: 100%;
+max-width: 700px;
+background: rgba(255,255, 255, 0.2);
+display: flex;
+align-items: center; border-radius: 60px;
+padding: 10px 20px;
+}
+.search-bar input {
+background: pink;
+flex: 1;
+border: 0;
+outline: none;
+padding: 24px 20px; font-size: 20px; 
+color: grey;
+}
+: :placeholder{
+color: grey;
+}
+.search-bar button{ 
+border: 0;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+background: grey;
+cursor: pointer;
+}
+</style>
 </head>
 <body>
 <form>
@@ -46,6 +109,15 @@ Check the boxes of the ones you know and don't know!
     <label for="Electronic Dance">Electronic Dance</label>
   </div>
   </fieldset>
+ <form name=inclass>
+Yes or No: <input
+type=text id=genres onchange="yesIknow();">
+ </form>
+<div class="container">
+<form action="https://www.google.com/search" method="get" class="search-bar">
+<input type="text" placeholder="search a song" name="q">
+<button type="submit"><img src="images/search.png"></button>
 </form>
+</div>
 </body>
 </html>
