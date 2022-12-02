@@ -2,31 +2,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1>Here's a few exercises that will help your genre in music and some possible favorite songs!</h1>
-<h2>First: let's  check how many genres you know!</h2>
-Check the boxes of the ones you know and don't know!
-<script>
- function yesIknow()
- {
-if (document. querySelector("#genres").value =="yes")
- {
- alert("Hey, you know some!");
- }
+<h1>Here's a few exercises that will help you to find your favorite genre in music!</h1>
+<h2>First: Check the boxes how you want your music to sound like!</h2>
+      <script>
+        function Iknow()
+        {
+           if (document.querySelector("#yes").value =="yes" || 
+               document.querySelector("#yes").value =="yes") {
+             alert("Great!");
+           } else {
+             alert("Maybe you have many?");
+           }
 </script>
 <script>
- function yesIknow()
- {
-if (document. querySelector("#genres").value =="no")
- {
- alert("Oh, don't worry!");
- }
- }
- </script>
+         function glue()
+         {
+           document.querySelector("#last").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#second").value
+         }
+</script>
 <style>
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #C08FAD ,#FFC4E8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+	text-align: center;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+Color : #B491A7;
+}
+h3 {
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #C08FAD ,#FFC4E8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+	text-align: center;
+}
 .container{ 
 min-height: 100vh;
 display: flex;
-align-items: center;
 justify-content: center;
 }
 .search-bar input {
@@ -39,48 +62,72 @@ color: grey;
 </head>
 <body>
 <form>
-<fieldset>
   <div>
-    <input type="checkbox" id="Pop" name="source" value="Pop">
-    <label for="Pop">Pop</label>
+    <input type="checkbox" id="Calm" name="source" value="Calm">
+    <label for="Calm">Calm</label>
   </div>
   <div>
-    <input type="checkbox" id="Hip-Hop" name="source" value="Hip-Hop">
-    <label for="Hip-Hop">Hip-Hop</label>
+    <input type="checkbox" id="Rhythmic vibe" name="source" value="Rhythmic vibe">
+    <label for="Rhythmic vibe">Rhythmic vibe</label>
   </div>
   <div>
-    <input type="checkbox" id="Classical" name="source" value="Classical">
-    <label for="Classical">Classical</label>
+    <input type="checkbox" id="Relaxing " name="source" value="Relaxing">
+    <label for="Relaxing">Relaxing</label>
   </div>
   <div>
-    <input type="checkbox" id="Rock" name="source" value="Rock">
-    <label for="Rock">Rock</label>
+    <input type="checkbox" id="Fast" name="source" value="Fast">
+    <label for="Fast">Fast</label>
   </div>
   <div>
-    <input type="checkbox" id="R&B" name="source" value="R&B">
-    <label for="R&B">R&B</label>
+    <input type="checkbox" id="Energetic" name="source" value="Energetic">
+    <label for="Energetic">Energetic</label>
   </div>
   <div>
-    <input type="checkbox" id="K-Pop" name="source" value="K-Pop">
-    <label for="K-Pop">K-Pop</label>
+    <input type="checkbox" id="Melancholic" name="source" value="Melancholic">
+    <label for="Melancholic">Melancholic</label>
   </div>
   <div>
-    <input type="checkbox" id="Country" name="source" value="Country">
-    <label for="Country">Country</label>
+    <input type="checkbox" id="loud" name="source" value="loud">
+    <label for="loud">loud</label>
   </div>
   <div>
-    <input type="checkbox" id="Metal" name="source" value="Metal">
-    <label for="Metal">Metal</label>
+    <input type="checkbox" id="Resonant" name="source" value="Resonant">
+    <label for="Resonant">Resonant</label>
   </div>
   <div>
-    <input type="checkbox" id="Electronic Dance" name="source" value="Electronic Dance">
-    <label for="Electronic Dance">Electronic Dance</label>
+    <input type="checkbox" id="Slow" name="source" value="Slow">
+    <label for="Slow">Slow</label>
   </div>
-  </fieldset>
- <form name=inclass>
-Yes or No: <input
-type=text id=genres onchange="yesIknow();">
- </form>
+</form>
+<h2>Second: Does it sound like there's a genre in the ones you selected?</h2>
+Yes or No
+<form name=inclass>
+<input type=text id=yes onchange="Iknow();">
+      </form>
+<br>
+<h2>Third: Select the one you think might be?</h2>
+<INPUT TYPE=RADIO NAME="genre" VALUE="Pop">Pop
+<INPUT TYPE=RADIO NAME="genre" VALUE="Hip-Hop">Hip-Hop
+<INPUT TYPE=RADIO NAME="genre" VALUE=" Rock">Rock
+<INPUT TYPE=RADIO NAME="genre" VALUE="R&B">R&B
+<INPUT TYPE=RADIO NAME="genre" VALUE="Latin">Latin
+<INPUT TYPE=RADIO NAME="genre" VALUE="K-Pop">K-Pop
+<INPUT TYPE=RADIO NAME="genre" VALUE="Country">Country
+<INPUT TYPE=RADIO NAME="genre" VALUE="Classical">Classical
+<INPUT TYPE=RADIO NAME="genre" VALUE="Metal">Metal
+<INPUT TYPE=RADIO NAME="genre" VALUE="Electronic ">Electronic 
+<INPUT TYPE=RADIO NAME="genre" VALUE="Indie">Indie
+<br>
+<h2> Fourth: If not, don't worry you can also put two together and be a genre!</h2>
+<form name=inclass>
+        One: <input type=text id="first"><br>
+        Two:  <input type=text id="second" 
+                          onchange="glue();"><br>
+        Your genre:  <input type=text id="last"><br>
+      </form>
+<br>
+<h3> Last: Now its time to find songs in your favorite genre!</h3>
+<br>
 <div class="container">
 <form action="https://www.google.com/search" method="get" class="search-bar">
 <input type="text" placeholder="search a song" name="q">
