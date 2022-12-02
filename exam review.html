@@ -1,21 +1,128 @@
+
+<!-- This is page 6, where they can a couple of exercises that will help them find songs they might like-->
 <!DOCTYPE html>
-<html lang="en">
- <head>
- <title>Javascript</title>
- <script>
- function yesIknow()
- {
-if (document. querySelector("#genres").value =="yes")
- {
- alert("Hey, you know some!");
- }
- }
- </script>
- </head>
- <body>
- <form name=inclass>
-Yes or No: <input
-type=text id=genres onchange="yesIknow();">
- </form>
- </body>
+<html>
+<head>
+<h1>Here's a few exercises that will help you to find your favorite genre in music!</h1>
+<h2>First: Check the boxes how you want your music to sound like!</h2>
+      <script>
+        function Iknow()
+        {
+           if (document.querySelector("#yes").value =="yes" || 
+               document.querySelector("#yes").value =="yes") {
+             alert("Great!");
+           } else {
+             alert("Maybe you have many?");
+           }
+        }
+      </script>
+<script>
+         function glue()
+         {
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+      </script>
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #C08FAD ,#FFC4E8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+	text-align: center;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+Color : #B491A7;
+}
+.container{ 
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.search-bar input {
+background: mistyrose;
+border: 0;
+padding: 20px 30px; font-size: 20px; 
+color: grey;
+}
+</style>
+</head>
+<body>
+<form>
+  <div>
+    <input type="checkbox" id="Calm" name="source" value="Calm">
+    <label for="Calm">Calm</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Rhythmic vibe" name="source" value="Rhythmic vibe">
+    <label for="Rhythmic vibe">Rhythmic vibe</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Relaxing " name="source" value="Relaxing">
+    <label for="Relaxing">Relaxing</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Fast" name="source" value="Fast">
+    <label for="Fast">Fast</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Energetic" name="source" value="Energetic">
+    <label for="Energetic">Energetic</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Melancholic" name="source" value="Melancholic">
+    <label for="Melancholic">Melancholic</label>
+  </div>
+  <div>
+    <input type="checkbox" id="loud" name="source" value="loud">
+    <label for="loud">loud</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Resonant" name="source" value="Resonant">
+    <label for="Resonant">Resonant</label>
+  </div>
+  <div>
+    <input type="checkbox" id="Slow" name="source" value="Slow">
+    <label for="Slow">Slow</label>
+  </div>
+</form>
+<h2>Second: Does it sound like there's a genre in the ones you selected?</h2>
+Yes or No
+<form name=inclass>
+<input type=text id=yes onchange="Iknow();">
+      </form>
+<br>
+<h2>Third: Do you think might be one of these?</h2>
+<INPUT TYPE=RADIO NAME="genre" VALUE="Pop">Pop
+<INPUT TYPE=RADIO NAME="genre" VALUE="Hip-Hop">Hip-Hop
+<INPUT TYPE=RADIO NAME="genre" VALUE=" Rock">Rock
+<INPUT TYPE=RADIO NAME="genre" VALUE="R&B">R&B
+<INPUT TYPE=RADIO NAME="genre" VALUE="Latin">Latin
+<INPUT TYPE=RADIO NAME="genre" VALUE="K-Pop">K-Pop
+<INPUT TYPE=RADIO NAME="genre" VALUE="Country">Country
+<INPUT TYPE=RADIO NAME="genre" VALUE="Classical">Classical
+<INPUT TYPE=RADIO NAME="genre" VALUE="Metal">Metal
+<INPUT TYPE=RADIO NAME="genre" VALUE="Electronic ">Electronic 
+<INPUT TYPE=RADIO NAME="genre" VALUE="Indie">Indie
+<br>
+<h2> Fourth: If not, don't worry you can also put two together and be a genre!</h2>
+<form name=inclass>
+        First: <input type=text id="first"><br>
+        Last:  <input type=text id="last" 
+                          onchange="glue();"><br>
+        Full:  <input type=text id="full"><br>
+</form>
+<div class="container">
+<form action="https://www.google.com/search" method="get" class="search-bar">
+<input type="text" placeholder="search a song" name="q">
+  <input type="submit" value="Submit">
+</form>
+</div>
+</body>
 </html>
