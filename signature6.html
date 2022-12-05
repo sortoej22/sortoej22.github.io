@@ -4,16 +4,17 @@
 <head>
 <h1>Here's a few exercises that will help you to find your favorite genre in music!</h1>
 <h2>First: Check the boxes how you want your music to sound like!</h2>
-      <script>
-        function Iknow()
+     <script>
+        function know()
         {
            if (document.querySelector("#yes").value =="yes" || 
-               document.querySelector("#yes").value =="yes") {
+               document.querySelector("#yes").value =="Yes") {
              alert("Great!");
            } else {
-             alert("Maybe you have many?");
+             alert("Maybe there's more than one?");
            }
-</script>
+        }
+      </script>
 <script>
          function glue()
          {
@@ -102,7 +103,7 @@ color: grey;
 <h2>Second: Does it sound like there's a genre in the ones you selected?</h2>
 Yes or No
 <form name=inclass>
-<input type=text id=yes onchange="Iknow();">
+    <input type=text id=yes onchange="know();">
       </form>
 <br>
 <h2>Third: Select the one you think might be?</h2>
