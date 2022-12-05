@@ -24,6 +24,13 @@
              + document.querySelector("#second").value
          }
 </script>
+<script type="text/javascript" >  
+function showcommentform() {  
+var data="The limit doesnt exist!";  
+  
+document.getElementById('mylocation').innerHTML=data;  
+ }   
+</script>
 <style>
 h1 {
   font-size: 50px;
@@ -49,7 +56,6 @@ h3 {
 	text-align: center;
 }
 .container{ 
-min-height: 100vh;
 display: flex;
 justify-content: center;
 }
@@ -58,6 +64,17 @@ background: mistyrose;
 border: 0;
 padding: 20px 30px; font-size: 20px; 
 color: grey;
+}
+Button 
+{
+width: 60px;
+height: 40px;
+background-color: pink;
+color: white;
+border: 3px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
 }
 </style>
 </head>
@@ -119,7 +136,15 @@ Yes or No
 <INPUT TYPE=RADIO NAME="genre" VALUE="Electronic ">Electronic 
 <INPUT TYPE=RADIO NAME="genre" VALUE="Indie">Indie
 <br>
-<h2> Fourth: If not, don't worry you can also put two together and be a genre!</h2>
+<h2> Fourth:If its not one in specific, don't worry there are so many options to put together and make new genres!</h2>
+
+But before that, do you want to know how many can you make? Click the button to know!
+<form name="myForm">  
+<input type="button" value="comment" onclick="showcommentform()">  
+<div id="mylocation"></div>  
+</form>
+<h2> Now you can make your own!</h2>
+
 <form name=inclass>
         One: <input type=text id="first"><br>
         Two:  <input type=text id="second" 
@@ -132,8 +157,10 @@ Yes or No
 <div class="container">
 <form action="https://www.google.com/search" method="get" class="search-bar">
 <input type="text" placeholder="search a song" name="q">
-  <input type="submit" value="Submit">
+  <input type="submit" value="&#128269">
 </form>
 </div>
+<a href="https://sortoej22.github.io/signature2.html">
+ <button type="button" onclick="resetForm()"> Back </button>
 </body>
 </html>

@@ -24,6 +24,13 @@
              + document.querySelector("#second").value
          }
 </script>
+<script type="text/javascript" >  
+function showcommentform() {  
+var data="The limit doesnt exist!";  
+  
+document.getElementById('mylocation').innerHTML=data;  
+ }   
+</script>
 <style>
 h1 {
   font-size: 50px;
@@ -129,7 +136,14 @@ Yes or No
 <INPUT TYPE=RADIO NAME="genre" VALUE="Electronic ">Electronic 
 <INPUT TYPE=RADIO NAME="genre" VALUE="Indie">Indie
 <br>
-<h2> Fourth: If its not one in specific, don't worry you can also put two together and make a genre!</h2>
+<h2> Fourth:If its not one in specific, don't worry there are so many options to put together and make new genres!</h2>
+
+But before that, do you want to know how many can you make? Click the button to know!
+<form name="myForm">  
+<input type="button" value="comment" onclick="showcommentform()">  
+<div id="mylocation"></div>  
+</form>
+<h2> Now you can make your own!</h2>
 <form name=inclass>
         One: <input type=text id="first"><br>
         Two:  <input type=text id="second" 
